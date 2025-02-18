@@ -10,3 +10,7 @@ O MobileIncTech é um projeto inovador que visa proporcionar o acesso à incubad
 🛠️ Tecnologias Utilizadas
 
 - Ionic: Framework robusto para o desenvolvimento de aplicações móveis híbridas, permitindo uma experiência fluída e compatível com diversas plataformas.
+
+🌐 Link de Acesso
+
+- Acesse a plataforma diretamente: Google Drive - MobileIncTech
