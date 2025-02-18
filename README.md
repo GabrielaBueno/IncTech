@@ -1,8 +1,13 @@
 # IncTech
 
-O projeto IncTech é um projeto mobile realizado através da disciplina de programação para dispositivos móveis, tendo como intuito auxiliar o site da incubadora da universidade.
-Para mais informações está sendo disponibilizado o documento do projeto e o link de direcionamento do código desenvolvido.
+O MobileIncTech é um projeto inovador que visa proporcionar o acesso à incubadora da universidade através de uma aplicação móvel, facilitando a interação dos usuários com informações cruciais para o desenvolvimento de novos negócios e inovações.
 
-Link: l1nk.dev/MobileIncTech
+🌐 Link de Acesso
+Acesse a plataforma diretamente: l1nk.dev/MobileIncTech
 
-Para a execução do projeto recomenda-se utilizar o prompt de comando, onde se encontra direcionado a pasta do arquivo, em seguida digitar o comando: ionic serve
+🚀 Funcionalidades
+Acesso a informações sobre a incubadora: Consulte detalhes essenciais sobre a incubadora da universidade.
+Interface amigável: Navegação intuitiva e de fácil acesso para todos os usuários.
+
+🛠️ Tecnologias Utilizadas
+Ionic: Framework robusto para o desenvolvimento de aplicações móveis híbridas, permitindo uma experiência fluída e compatível com diversas plataformas.
