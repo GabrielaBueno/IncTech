@@ -1,0 +1,61 @@
+<ion-content class="speaker-detail">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/app/tabs/speakers"></ion-back-button>
+      </ion-buttons>
+      <ion-buttons *ngIf="speaker" slot="end">
+        <ion-button (click)="openContact(speaker)">
+          <ion-icon slot="icon-only" ios="call-outline" md="call-sharp"></ion-icon>
+        </ion-button>
+        <ion-button (click)="openSpeakerShare(speaker)">
+          <ion-icon slot="icon-only" ios="share-outline" md="share-sharp"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="speaker-background">
+    <img [src]="speaker?.profilePic" [alt]="speaker?.name">
+    <h2>{{speaker?.name}}</h2>
+  </div>
+
+  <div class="ion-padding speaker-detail">
+    <p>{{speaker?.about}} Informaçães Geral das Empresas:</p>
+    <p>HackaBee 4.0</p>
+    <ul>O objetivo geral do evento é realizar uma maratona de colaboração e
+      competição para o desenvolvimento de soluções da Universidade Tecnológica
+      Federal do Paraná - Campus Cornélio Procópio, fomentando inovação, tecnologia e
+      empreendedorismo nos participantes e no ecossistema da cidade, visando o
+      desenvolvimento de soluções para desafios relacionados à sustentabilidade.</ul>
+
+    <hr>
+
+    <ion-chip color="instagram" button (click)="openExternalUrl('https://www.instagram.com/hackabee.utfpr/')">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-label>Instagram</ion-label>
+    </ion-chip>
+
+    <p>Unect Jr</p>
+    <ul>Somos a Unect, a empresa júnior de TI
+      da UTFPR em Cornélio Procópio, desde
+      2016. Criamos soluções inovadoras,
+      acessíveis e de alta qualidade para
+      nossos clientes, apoiados pela
+      universidade e orientação
+      especializada. Também oferecemos
+      aos estudantes de computação uma
+      experiência empresarial única,
+      desenvolvendo habilidades técnicas e
+      comportamentais.</ul>
+
+    <hr>
+
+    <ion-chip color="instagram" button (click)="openExternalUrl('https://www.instagram.com/unectjr/')">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-label>Instagram</ion-label>
+    </ion-chip>
+  </div>
+
+
+</ion-content>

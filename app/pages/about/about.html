@@ -1,0 +1,61 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button (click)="presentPopover($event)">
+          <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="about-header">
+    <!-- Instead of loading an image each time the select changes, use opacity to transition them -->
+    <div class="about-image madison" [ngStyle]="location === 'madison' && {'opacity': '1'}"></div>
+
+  </div>
+
+  <div class="about-info">
+    <h3 class="ion-padding-top ion-padding-start"></h3>
+
+    <p class="ion-padding-start ion-padding-end">
+      A IUT tem como missão abrigar empresas cujos produtos, processos ou serviços são gerados a partir de resultados de pesquisas aplicadas, nos quais a tecnologia representa alto valor agregado. O objetivo geral da IUT é acelerar o processo de criação de micro e pequenas empresas aumentando suas chances de sobrevivência na sociedade, gerando emprego e renda, a fim de ajudar na promoção do Desenvolvimento Regional Sustentável.
+    </p>
+
+    <h3 class="ion-padding-top ion-padding-start">Informações</h3>
+
+    <ion-list lines="none">
+      <ion-item>
+        <ion-select label="Endereço" [(ngModel)]="location" [interfaceOptions]="selectOptions">
+          <ion-select-option value="madison">Rua do Expedicionários, 568, Cornélio Procópio-PR</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+
+    </ion-list>
+
+    <h3 class="ion-padding-top ion-padding-start">Contatos</h3>
+
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label>
+         Telefone
+        </ion-label>
+        <ion-label class="ion-text-end">
+          (43) 3133-3887
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+         Redes
+        </ion-label>
+        <ion-label class="ion-text-end">
+          @sprint.cp
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

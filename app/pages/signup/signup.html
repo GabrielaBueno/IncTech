@@ -1,0 +1,48 @@
+<ion-header>  <!--Cadastro-->
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="signup-logo">
+    <img src="assets/fundo/img1.png" alt="Ionic Logo">
+  </div>
+
+  <div class="signup-form">
+    <form #signupForm="ngForm" novalidate>
+      <ion-input
+        label="Usuário"
+        labelPlacement="stacked"
+        fill="solid"
+        [(ngModel)]="signup.username"
+        name="username"
+        type="text"
+        #username="ngModel"
+        errorText="Username is required"
+        required>
+      </ion-input>
+
+      <ion-input
+        label="Senha"
+        labelPlacement="stacked"
+        fill="solid"
+        [(ngModel)]="signup.password"
+        name="password"
+        type="password"
+        #password="ngModel"
+        errorText="Password is required"
+        required>
+      </ion-input>
+
+      <div class="ion-padding">
+        <ion-button (click)="onSignup(signupForm)" type="submit" expand="block">Enviar</ion-button>
+      </div>
+    </form>
+  </div>
+
+</ion-content>

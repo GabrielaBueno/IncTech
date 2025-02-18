@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-logo">
+    <img src="assets/fundo/img2.png" alt="Ionic logo">
+  </div>
+
+  <div class="login-form">
+    <form #loginForm="ngForm" novalidate>
+      <ion-input
+        label="Usuário"
+        labelPlacement="stacked"
+        fill="solid"
+        [(ngModel)]="login.username"
+        name="username"
+        type="text"
+        #username="ngModel"
+        spellcheck="false"
+        autocapitalize="off"
+        errorText="Username is required"
+        required>
+      </ion-input>
+
+      <ion-input
+        label="Senha"
+        labelPlacement="stacked"
+        fill="solid"
+        [(ngModel)]="login.password"
+        name="password"
+        type="password"
+        #password="ngModel"
+        errorText="Password is required"
+        required>
+      </ion-input>
+
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Login</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="onSignup()" color="light" expand="block">Cadastre-se</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+
+</ion-content>

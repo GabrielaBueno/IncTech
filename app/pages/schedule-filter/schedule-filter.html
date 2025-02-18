@@ -1,0 +1,43 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button *ngIf="ios" (click)="dismiss()">Cancelar</ion-button>
+      <ion-button *ngIf="!ios" (click)="selectAll(false)">Reiniciar</ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      Filtrar sessões
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="applyFilters()" strong>Concluido</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list [lines]="ios ? 'inset' : 'full'">
+    <ion-list-header>Obrigado</ion-list-header>
+
+    <ion-item *ngFor="let track of tracks" [attr.track]="track.name | lowercase">
+      <ion-icon *ngIf="ios" slot="start" [name]="track.icon" color="medium"></ion-icon>
+
+      <!-- TODO(FW-3891): remove aria-label once bug is resolved -->
+      <ion-checkbox [(ngModel)]="track.isChecked" [attr.aria-label]="track.name">
+        {{track.name}}
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer translucent="true" *ngIf="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="selectAll(false)">Desmarcar todos</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="selectAll(true)">Selecionar todos</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
