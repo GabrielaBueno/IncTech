@@ -1,6 +1,6 @@
 # IncTech
 
-- O MobileIncTech é um projeto inovador que visa proporcionar o acesso à incubadora da universidade através de uma aplicação móvel, facilitando a interação dos usuários com informações cruciais para o desenvolvimento de novos negócios e inovações.
+O MobileIncTech é um projeto inovador que visa proporcionar o acesso à incubadora da universidade através de uma aplicação móvel, facilitando a interação dos usuários com informações cruciais para o desenvolvimento de novos negócios e inovações.
 
 🚀 Funcionalidades
 
