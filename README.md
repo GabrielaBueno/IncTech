@@ -14,3 +14,7 @@ O MobileIncTech é um projeto inovador que visa proporcionar o acesso à incubad
 🌐 Link de Acesso
 
 - Acesse a plataforma diretamente:[Google Drive - MobileIncTech](https://drive.google.com/file/d/1YTac8Nq5UOvXIPQiW5N0g36L78Gnik6x/view?usp=drive_link)
+
+## 👥 Autores
+- **Gabriela dos Reis Bueno**
+- **Matheus Bueno Faria**
